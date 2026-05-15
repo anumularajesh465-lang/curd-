@@ -1,5 +1,5 @@
 
-import { createBrowserRouter,RouterProvider } from "react-router"
+import { createHashRouter,RouterProvider } from "react-router-dom"
 import RootLayour from "./components/RootLayour"
 import Home from "./components/Home"
 import Login from "./components/Login"
@@ -9,7 +9,7 @@ import Java from "./components/Java"
 import Nodejs from "./components/Nodejs"
 import Vue from "./components/Vue"
 function App() {
-  let routerobj=createBrowserRouter([
+  let routerobj=createHashRouter([
     {
       path:'/',
       element:<RootLayour/>,
